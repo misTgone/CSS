@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02_animation</title>
+	<style>
+		@keyframes change{
+			0%{background:#f00;border-radius:0%;}
+			25%{background:#ff0;border-radius:50%;}
+			50%{background:pink;border-radius:0%;}
+			75%{background:#00f;border-radius:50%;}
+			100%{background:orange;border-radius:0%;}
+		}
+		div{
+			width:200px;height:200px;
+			border:2px solid #f00;
+			animation-fill-mode:backwards;
+		}
+		div:hover{
+			animation-name:change;
+			animation-duration:4s;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

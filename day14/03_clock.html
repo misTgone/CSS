@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03_ex</title>
+	<style>
+		body>div{
+			width:400px;height:400px;
+			border:1px solid blue;
+			border-radius:50%;
+			background:url(zpc.jpg);
+		}
+		body>div div:first-child{
+			height:10px;width:100px;
+			background:pink;
+			position:absolute;
+			top:196px;left:201px;
+			transform-origin:0px 5px;
+			animation:div1 3600s infinite;
+		}
+		body>div div:last-child{
+			height:8px;width:180px;
+			background:yellow;
+			position:absolute;
+			top:197px;left:201px;
+			transform-origin:0px 4px;
+			animation:div1 60s infinite;
+		}
+		@keyframes div1{
+			0%{transform:rotate(-90deg);}
+			100%{transform:rotate(360deg);}
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>04_gradient</title>
+	<style>
+		#d1{
+			width:200px;height:200px;
+			border:2px solid #0f0;
+			background-image:linear-gradient(to bottom,#155233 0px,#222744 50px,#334455 100px,#542123 150px);
+		}
+		#d2{
+			width:200px;height:200px;
+			border:2px solid #0f0;
+			background-image:radial-gradient(200px at center center,#155233 0px,#222744 50px,#334455 100px,#542123 150px);
+		}
+		#d3{
+			width:200px;height:200px;
+			background-image:repeating-radial-gradient(200px at center center,#a296ae 10%,#675b73 25%);
+			border-radius:8px;
+			border-top-right-radius:90%;
+			border-bottom-left-radius:90%;
+			border:3px solid black;
+			transform:rotate(-20deg);
+			margin-left:50px;
+		}
+		#d4{
+			width:200px;height:200px;
+			border-radius:8px;
+			border-top-right-radius:80%;
+			border-bottom-left-radius:80%;
+			border:3px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id='d1'></div>
+	<div id='d2'></div>
+	<div id='d3'></div>
+	<div id='d4'></div>
+</body>
+</html>

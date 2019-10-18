@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.all{
+			font-size:26px;
+			color:red;
+		}
+		div.all{
+			color:green;
+			font-size:55px;
+		}
+		/*未访问时*/
+		a:link{color:#000;text-decoration:none;}
+		/*鼠标悬停*/
+		a:hover{color:#f00;font-size:40px;}
+		/*激活*/
+		a:active{color:#0f0;font-size:80px;}
+		/*访问过*/
+		a:visited{color:orange;}
+		/*未访问时*/
+		input{color:gray;font-size:italic;}
+		/*激活*/
+		input:active{font-size:normal;}
+		/*获取焦点时*/
+		input:focus{color:red;}
+	</style>
+</head>
+<body>
+	<p class='all'>
+		hahahaha
+		<div class='all'>
+			gogogogo
+		</div>
+	</p>
+	<a href="#" id='a1'>zpc</a>
+	<div>
+		<input type="text" id='text1'>
+	</div>
+</body>
+</html>

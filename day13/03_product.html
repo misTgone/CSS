@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03_product</title>
+	<style>
+		section{
+			width:1005px;
+			height:615px;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-around;
+		}
+		.div1{
+			width:610px;height:370px;
+			background:#E8E8E8;
+		}
+		.div1 div,.div2 div{
+			position:relative;
+			top:50px;left:40px;
+		}
+
+		.div2 div{left:10px;}
+		.div2{
+			width:380px;height:370px;
+			background:#E8E8E8;
+		}
+		.div3{
+			width:370px;height:230px;
+			background:#E8E8E8 url(study_computer_img3.png) no-repeat 88% 50%;
+		}
+		.div3 div{
+			position:relative;
+			top:48px;left:25px;
+		}
+		.div4{
+			width:203px;height:230px;
+			background:#E8E8E8 url(study_computer_img4.png) no-repeat center top;
+		}
+		.div5{
+			background-image:url(study_computer_img5.png);
+		}
+		.div6{
+			background-image:url(study_computer_img6.png);
+		}
+		.div4 div,.div5 div,.div6 div{
+			position:relative;
+			top:120px;
+			left:40px;
+		}
+		.p1{
+			font-size:32px;
+			color:#333333;
+			margin:0;
+		}
+		.p2{
+			font-size:12px;
+			color:#666666;
+		}
+		.p3{
+		 font-size:24px;
+		 color:#0aa1ed;
+		 margin:0;
+		}
+		.p4{
+			margin:0;
+		}
+		.p4 a{
+			font-size:16px;
+			font-weight:bold;
+			color:white;
+			text-decoration:none;
+			width:120px;
+			height:40px;
+			background-color:#0aa1ed;
+			display:inline-block;
+			line-height:40px;
+			text-align:center;
+			border-radius:5%;
+		}
+		.p5 a{
+			width:102px;
+			height:28px;
+			font-size:14px;
+			line-height:28px;
+		}
+		.p6{
+			font-size:22px;
+		}
+		.p7{
+			font-size:12px;
+			color:#333333;
+		}
+		.div1>img{
+			position:relative;
+			top:-180px;
+			left:34%;
+			/*过渡*/
+			transition-property:all;
+			transition-duration:500ms;
+		}
+		.div1>img:hover,.div2>img:hover{
+			transform:scale(1.1);
+		}
+		.div2>img{
+			position:relative;
+			top:-92px;
+			left:80px;
+			/*过渡*/
+			transition-property:all;
+			transition-duration:500ms;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class='div1'>
+			<div>
+				<p class='p1'>Apple MacBook <br>Air系列</p>
+				<p class='p2'>酷睿双核i5处理器|256GB SSD|8GB内存|英特<br>尔HD显卡620含共享显卡内存</p>
+				<p class='p3'>￥6988.00</p>
+				<p class='p4'><a href="#">查看详情</a></p>
+			</div>
+			<img src="study_computer_img1.png" alt="">
+		</div>
+		<div class='div2'>
+			<div>
+				<p class='p1'>小米Air 金属超<br>轻薄</p>
+				<p class='p2'>酷睿双核i5处理器|512GB SSD|2GB内存|英特尔<br>HD独立显卡</p>
+				<p class='p3'>￥3488.00</p>
+				<p class='p4'><a href="#">查看详情</a></p>
+			</div>
+			<img src="study_computer_img2.png" alt="">
+		</div>
+		<div class='div3'>
+			<div>
+				<p class='p1 p6'>联想E480C 轻<br>薄系列</p>
+				<p class='p3'>￥5399.00</p>
+				<p class='p4'><a href="#">查看详情</a></p>
+			</div>
+		</div>
+		<div class='div4'>
+			<div>
+				<p class='p7'>华硕RX310 金属超极本</p>
+				<p class='p3'>￥4966.00</p>
+				<p class='p5 p4'><a href="#">查看详情</a></p>
+			</div>
+		</div>
+		<div class='div4 div5'>
+			<div>
+				<p class='p7'>联想小新700 电竞版游戏本</p>
+				<p class='p3'>￥6299.00</p>
+				<p class='p5 p4'><a href="#">查看详情</a></p>
+			</div>
+		</div>
+		<div class='div4 div6'>
+			<div>
+				<p class='p7'>戴尔灵越燃7000 轻薄窄边</p>
+				<p class='p3'>￥5199.00</p>
+				<p class='p5 p4'><a href="#">查看详情</a></p>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

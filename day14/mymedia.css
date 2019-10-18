@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    font: 16px "黑体";
+}
+/*>=992px*/
+@media screen and (min-width: 992px) {
+    div>p{
+        font-size: 24px;
+        background:#0000ff;
+        color: aliceblue;
+    }
+}
+/*<=991px >=768px*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    div>p{
+        font-size: 34px;
+        background:#ffff00;
+        color: chartreuse;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div>p{
+        font-size: 12px;
+        background:#ffff00;
+        color: black;
+    }
+}

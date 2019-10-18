@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07_ex_Bootcss</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+        }
+        .d1{
+            background: #222222;
+            width: 100%;
+            height:40px;
+        }
+        .d1 a{
+            text-decoration: none;
+            color: #9d9d9d;
+        }
+        ul{
+            list-style-type: none;
+
+        }
+        ul li{
+            float: left;
+            line-height: 40px;
+            margin-right: 20px;
+        }
+        ul li:first-child{
+            font-size: 19px;
+        }
+        ul li:last-child{
+            float: right;
+        }
+        #div1{
+            background: url("./img/bk.png") repeat 50%, linear-gradient(45deg,#020031,#6d3353);
+        }
+        .d2{
+            width: 100%;
+            height: 420px;
+            box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+        }
+        .d2 div{
+            position: relative;
+            top: 40px;
+        }
+        .d2 div p{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .d2 div p:first-child{
+            color: white;
+            font-size: 80px;
+            font-weight: bold;
+        }
+        .d2 div p:nth-child(2){
+            color: white;
+            font-size: 26px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .d2 div p:nth-child(3){
+        }
+        .d2 div p:nth-child(3) a{
+            color: white;
+            height: 30px;width: 300px;
+            display: block;
+            background: #337ab7;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 6px;
+            margin: 0 auto;
+            box-shadow: 0px 2px 0px #28dda2 ;
+        }
+        .d2 div p:nth-child(4) a{
+            color: #9d9d9d;
+            font-size: 13px;
+        }
+        .d2 div p:nth-child(3){
+            margin-top: 30px;
+        }
+        .d3 a{
+            color:#555555;
+            font-size: 16px;
+        }
+        .d3{
+            height: 50px;
+            text-align: center;
+            background: #f5f5f5;
+        }
+        .a1:hover{
+            text-decoration: underline #555555;
+            color: #28dda2;
+        }
+        .a2{
+            background: url("./img/QQ4.png") no-repeat 0px;
+            padding-left: 25px;
+            line-height: 50px;
+        }
+        .a2:hover{
+            background: url("./img/QQ3.png") no-repeat 0px 1.5px;
+            padding-left: 25px;
+            text-decoration: underline orange;
+            color: orange;
+            line-height: 50px;
+        }
+        .d4{
+            height: 100px;
+            text-align: center;
+        }
+        .d4 p:last-child{
+            font-size: 14px;
+            margin-top: 10px;
+            display: inline-block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f5f5f5;
+        }
+        .d5 div{
+            float: left;
+        }
+        .class1{
+            width: 310px;
+            height: 380px;
+            border: 1px solid #f5f5f5;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .class1 a{
+            display: block;
+        }
+        .class1 a:nth-child(2){
+            font-size: 24px;
+            color: #337ab7;
+            margin-top: 30px;
+        }
+        .class1 a:nth-child(3){
+            font-size: 15.6px;
+            color: #777777;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .class1 p{
+            font-size: 14px;
+            width:280px;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 992px) {
+            .d5{
+                width: 1248px;
+                margin: 0 auto;
+            }
+            .d4 p:nth-child(1){
+                margin-top: 50px;
+                font-size: 42px;
+            }
+        }
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+            .d5{
+                width: 624px;
+                margin: 0 auto;
+            }
+            .d4 p:nth-child(1){
+                font-size: 30px;
+                width: 330px;
+                display: block;
+                margin: 0px auto;
+                margin-top: 30px;
+            }
+            .d4{
+                margin-bottom: 40px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .d5{
+                width: 310px;
+                margin: 0 auto;
+            }
+            .d4 p:nth-child(1){
+                font-size: 30px;
+                width: 330px;
+                display: block;
+                margin: 0px auto;
+                margin-top: 30px;
+            }
+            .d4 p:last-child{
+                width: 310px;
+                display: block;
+                margin: 0 auto;
+            }
+            .d4{
+                margin-bottom: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="d1">
+            <ul>
+                <li><a href="">Bootstrap中文网</a></li>
+                <li><a href="">Bootstrap2中文网</a></li>
+                <li><a href="">Bootstrap3中文文档</a></li>
+                <li><a href="">Bootstrap4中文文档</a></li>
+                <li><a href="">Less教程</a></li>
+                <li><a href="">JQuery API</a></li>
+                <li><a href="">网站实例</a></li>
+                <li><a href="">关于</a></li>
+            </ul>
+        </div>
+        <div id="div1">
+            <div class="d2">
+                <div>
+                    <p>Bootstrap</p>
+                    <p>简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+                    <p><a href="">Bootstrap3中文文档（V3.3.7）</a></p>
+                    <p><a href="">Bootstrap中文文档（V2.3.2）</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="d3">
+            <img src="./img/QQ2.png" alt=""><a href="" class="a1">Bootstrap问答社区</a>
+            |
+            <a href="" class="a2">新浪微博：@Bootstrap中文网</a>
+        </div>
+        <div class="d4">
+            <p>Bootstrap相关优质项目推荐</p>
+            <p>这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的</p>
+        </div>
+        <div class="d5">
+            <div class="class1">
+                <a href=""><img src="./img/expo.png" alt=""></a>
+                <a href="">优选网站</a>
+                <a href="">Bootstrap 网站实例</a>
+                <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+            </div>
+            <div class="class1">
+                <a href=""><img src="./img/webpack.png" alt=""></a>
+                <a href="">Webpack</a>
+                <a href="">是前端资源模块化管理和打包工具</a>
+                <p>Webpack 是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。</p>
+            </div>
+            <div class="class1">
+                <a href=""><img src="./img/react.png" alt=""></a>
+                <a href="">React</a>
+                <a href="">用于构建用户界面的 JavaScript 框架</a>
+                <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>
+            </div>
+            <div class="class1">
+                <a href=""><img src="./img/typescript.png" alt=""></a>
+                <a href="">TypeScript</a>
+                <a href="">中文手册</a>
+                <p>TypeScript 是由微软开源的编程语言。它是 JavaScript 的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

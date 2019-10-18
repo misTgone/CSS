@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03_flex</title>
+	<style>
+		div{
+			border:2px solid red;
+			display:flex;
+
+			height:300px;
+			align-items:center;
+		}
+		p{
+			margin:0;padding:0;
+		}
+		.c1{
+			width:200px;height:200px;
+			background:#f00;
+			order:1;
+			flex-shrink:18;
+		}
+		.c2{
+			width:200px;height:200px;
+			background:#ff0;
+			flex-shrink:2;
+		}
+		.c3{
+			width:200px;height:200px;
+			background:#f0f;
+			flex-shrink:4;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p class='c1'></p>
+		<p class='c2'></p>
+		<p class='c3'></p>
+	</div>
+</body>
+</html>

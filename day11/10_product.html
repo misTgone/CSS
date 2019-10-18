@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10_product</title>
+	<style>
+		*{margin:0;padding:0;}
+		header{
+			width:1600px;height:106px;
+			text-align:center;
+			margin-top:50px;
+			margin-left:100px;
+		}
+		header>div,#div3,#div4{display:inline-block;}
+		#in{
+			height:30px;
+			width:369px;
+			position:relative;
+			top:-13px;
+			left:40px;
+		}
+		#img1{
+			margin-left:40px;
+		}
+		#img2{
+			margin-left:200px;
+		}
+		ul{
+			list-style-type:none;
+			height:34px;
+			position:relative;
+			top:3px;
+		}
+		li{
+			float:left;
+			margin:5px 5px;
+		}
+		li b{
+			position:relative;
+			left:5px;
+			top:-3px;
+			color:#808080;
+		}
+		#b1{
+			top:0px;
+		}
+		a{
+			text-decoration:none;
+			color:#808080;
+		}
+		#div1{
+			margin-left:400px;
+		}
+		#div2{
+			margin-left:400px;
+			margin-top:10px;
+			width:1000px;
+		}
+		hr{
+			border:1.5px solid #E8E8E8;
+		}
+		section>div>a{
+			font-size:26px;
+		}
+		#div3{
+			width:618px;height:371px;
+			background-color:#E8E8E8;
+			margin-left:400px;
+			margin-top:4px;
+			background-image:url(study_computer_img1.png);
+			background-repeat:no-repeat;
+			background-position:195px 50px;
+			
+		}
+		#div4{
+			width:381px;
+			height:371px;
+			background:#E8E8E8;
+			background-image:url(study_computer_img2.png);
+			background-position:75px 114px;
+			background-repeat:no-repeat;
+		}
+		#div3 div,#div4 div{
+			position:relative;
+			top:50px;
+			left:15px;
+		}
+		.p1{
+			font-size:32px;
+			color:#333333;
+		}
+		.p2{
+			font-size:12px;
+			color:#666666;
+		}
+		.p3{
+			font-size:24px;
+			color:#0AA1ED;
+			margin-top:20px;
+		}
+		.p4{
+			font-size:16px;
+			background-color:#27b1f6;
+			width:130px;height:40px;
+			text-align:center;
+			line-height:40px;
+		}
+		.p4 a{
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<!--头部-->
+	<header>
+		<div><img src="logo.png" alt="#"></div>
+		<div><input type="text" placeholder='请输入你要搜索的内容' id='in'><img src="search.png" alt="#" id='img1'></div>
+		<div>
+			<div>
+			<table></table>	
+			<ul>
+				<li><img src="care.png" alt="#" id='img2'><b>|</b></li>
+				<li><img src="order.png" alt="#"><b>|</b></li>
+				<li><img src="shop_car.png" alt="#"><b>|</b></li>
+				<li><a href="#">注册</a><b id='b1'>|</b></li>
+				<li><a href="#">登录</a></li>
+			</ul>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div id='div1'>
+			<img src="banner4.png" alt="#">
+		</div>
+		<div id='div2'>
+			<img src="computer_icon.png" alt="#">
+			<a>首页推荐 /1F</a>
+			<hr>
+		</div>
+		<div id='div3'>
+			<div>
+				<p class='p1'>Apple MacBook <br>Air系列</p>
+				<p class='p2'>酷睿双核i5处理器|256GB SSD|8GB内存|英特<br>尔HD显卡620含共享显卡内存</p>
+				<p class='p3'>￥6988.00</p>
+				<p class='p4'><a href="#">查看详情</a></p>
+			</div>
+		</div>
+		<div id='div4'>
+			<div>
+				<p class='p1'>小米Air 金属超<br>轻薄</p>
+				<p class='p2'>酷睿双核i5处理器|512GB SSD|2GB内存|英特尔<br>HD独立显卡</p>
+				<p class='p3'>￥3488.00</p>
+				<p class='p4'><a href="#">查看详情</a></p>
+			</div>
+		</div>
+	</section>
+	<footer></footer>
+</body>
+</html>

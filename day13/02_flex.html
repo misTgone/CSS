@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02_flex</title>
+	<style>
+		#parent{
+			border:2px solid red;display:flex;
+			flex-direction:row;
+			flex-wrap:no-wrap;
+			justify-content:space-around;
+			width:600px;height:300px;
+		}
+		.c1,.c2,.c3{
+			width:200px;height:200px;
+		}
+		.c1{background:#f0f;}
+		.c2{background:#ff0;}
+		.c3{background:#00f;}
+	</style>
+</head>
+<body>
+	<div id='parent'>
+		<div class='c1'></div>
+		<div class='c2'></div>
+		<div class='c3'></div>
+	</div>
+</body>
+</html>

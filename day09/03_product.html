@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03_product</title>
+	<style>
+		#container{width:1200px;height:560px;
+			margin:0 auto;
+			background-image:url(./register/bg.png);
+		}
+		.black{width:280px;height:269px;
+			background-color:rgba(0,0,0,0.3);
+			margin-left:800px;
+			margin-top:-100px;
+		}
+		.bn{width:260px;height:33px;
+			color:white;background-color:#25aaf3;border:none;
+		}
+		table{width:100%;height:250px;
+			text-align:center;
+			color:white;
+		}
+		#t1{height:5px;}
+		#t2{height:-15px;}
+		a{text-decoration:none;color:white;}
+		input.uname,input.upwd{width:85%;height:30px;
+			box-sizing:border-box;
+			background:#fff url(register/yhm.png) no-repeat 96% center;
+			border:0;outline:0;
+		}
+		input.upwd{background-image:url(register/mm.png);}
+	</style>
+</head>
+<body>
+	<div id='container'>
+	<table></table>
+		<div class='black'>
+			<table>
+				<tr>
+					<td id='t1'><h3 id='h3'>登录学子商城</h3></td>
+					<td align='right' valign='bottom'>新用户注册</td>
+				</tr>
+				<tr>
+					<td colspan='2' id='t2'><hr></td>
+				</tr>
+				<tr>
+					<td colspan='2'><input type="text" placeholder='请输入用户账号' class='uname'></td>
+				</tr>
+				<tr>
+					<td colspan='2'><input type="password" placeholder='请输入用户密码' class='upwd'></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" id='dl'><label for="dl">自动登录</label></td>
+					<td><a href="#">忘记密码？</a></td>
+				</tr>
+				<tr>
+					<td colspan='2'><input type="button" value='登录' class='bn'></td>
+				</tr>
+			</table>
+		</div>
+	</div>	
+</body>
+</html>
